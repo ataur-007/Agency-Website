@@ -14,12 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="script.js">
 </head>
 <body>
     <!-- This is for website navigation bar -->
 <nav class="container navbar navbar-expand-lg navbar-light mt-4 form-control-lg">
-    <a class="navbar-brand" href="www.ataurwd.com" id="logo">AtaurWD</a>
+    <a class="navbar-brand" href="index.html" id="logo">AtaurWD</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -49,8 +48,8 @@
         <div >
             <h1 id="font" class="text-center">Welcome to Our Website</h1>
             <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dolor porro accusantium laborum inventore distinctio beatae, asperiores quod qui, iste libero accusamus laudantium molestias vero sequi nihil sed nobis error? Distinctio nihil numquam ea culpa, accusantium consectetur veritatis voluptate sunt necessitatibus, itaque aliquid voluptatem nostrum consequatur vitae minus autem repudiandae qui porro suscipit saepe! Ducimus, nostrum. Cum in ea consectetur, beatae blanditiis vero vitae nostrum natus eum odit, placeat iure itaque </p>
-            <a href="#" class="btn btn-primary btn-lg mr-2">Learn More</a>
-            <a href="#" class="btn btn-secondary btn-lg">Get Started</a>
+            <a href="#" class="btn btn-primary btn-lg mr-2" onclick="alert('Working On It')">Learn More</a>
+            <a href="#" class="btn btn-secondary btn-lg" onclick="alert('Working On It')">Get Started</a>
         </div>
 
     </div>
@@ -89,8 +88,8 @@
 <section class="container" id="aboutUs">
     <div class="row">
         <div class="col-md-6 d-flex flex-column justify-content-center">
-            <h5>ABOUT COMPANY</h5>
-            <h1>25+ YEARS WORKING <span id="logo">EXPERIENCE.</span></h1>
+            <h5 style="color: #ff6f00;">ABOUT COMPANY</h5>
+            <h1 >25+ YEARS WORKING <span id="logo">EXPERIENCE.</span></h1>
             <p class="lead">There are many variations of passages of Lorem Ipsum available, the majority have suffered alteration in some form, by injected humour. randomised words which don't look even slightly believable. It uses a dictionary of over 200 Latin words, combined with.
             </p>
             <i class="fa-solid fa-circle-chevron-right"></i>
@@ -99,7 +98,7 @@
                 <li class="mt-2"><i class="fas fa-check-circle text-primary"></i> Business Solutions</li>
                 <li class="mt-2"><i class="fas fa-check-circle text-primary"></i> Creative Conceptions</li>
             </ul>
-            <button class="btn btn-info w-25">Read More</button>
+            <button class="btn btn-info w-25" onclick="alert('Working On It')">Read More</button>
         </div>
         <div class="col-md-6 gallery">
             <div class="row">
@@ -108,14 +107,99 @@
     </div>
 </section>
 
-<!-- This section for Coming soon -->
-<section>
-    <h1 class="text-center" id="font" style="margin: 50px 0;">Incomplete</h1> 
+<!-- Our services section -->
+
+
+
+<section style="margin: 70px 0; padding: 50px 0; background: linear-gradient(to right, #ff7e5f, #feb47b);" class="Services mx-auto text-center">
+    <div class="servicesMenu">
+        <button class="btn1" id="mobileApp">Mobile Application</button>
+        <button class="btn1" id="webDev">Web Development</button>
+        <button class="btn1" id="gameDev">Game Development</button>
+    </div>
+
+
+
+
+<!-- this is for mobile application service -->
+
+
+<section style="margin-top: 70px;" class="container" id="mobileServices">
+    <div class="row">
+        <!-- Left Column: Heading, Subtext, Button -->
+        <div class="col-md-6 d-flex flex-column justify-content-center text-md-left">
+            <h5 style="color: #0085FF;">App Services</h5>
+            <h1 style="padding-top: 7px;">Top Mobile Application <span style="color: #AAE1FC;">Development Services.</span></h1>
+            <p class="lead">There are many variations of passages of Lorem Ipsum available, the majority have suffered alteration in some form, by injected humour. randomised words which don't look even slightly believable. It uses a dictionary of over 200 Latin words, combined with.
+            </p>
+            <i class="fa-solid fa-circle-chevron-right"></i>
+            <ul class="icon-list" style="list-style: none;">
+                <li><i class="fas fa-check-circle text-primary"></i> Mobile App Development</li>
+                <li class="mt-2"><i class="fas fa-check-circle text-primary"></i> App UI/UX Design</li>
+                <li class="mt-2"><i class="fas fa-check-circle text-primary"></i> App Maintenance and Support</li>
+            </ul>
+            <button class="btn btn-info w-25" onclick="alert('Working On It')"><i class="fas fa-user-plus">Enrole Now</i>
+            </button>
+            </div>
+            <div class="col-md-6">
+            <img style="padding-top: 50px;" src="images/Services/1.svg" alt="Mobile Application Image" class="img-fluid rounded">
+        </div>
+    </div>
+</section>
+
+<!-- second service -->
+
+<section class="container my-5" id="webDevelopment">
+    <div class="row">
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+            <h2>Web Development</h2>
+            <p class="lead">
+            Our mobile application services provide high-quality, custom applications for both Android and iOS platforms. Our experienced developersensure your app is user-friendly, efficient, and tailored to your specific needs.
+            </p>
+            <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+            </div>
+            <div class="col-md-6">
+            <img src="https://i.pinimg.com/564x/75/66/84/756684ad9016af4e9f17ff80308cd426.jpg" alt="Mobile Application Image" class="img-fluid rounded">
+        </div>
+    </div>
+</section>
+
+<!-- Third services -->
+
+<section class="container my-5" id="gameDevelopment">
+    <div class="row">
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+            <h2>game Development</h2>
+            <p class="lead">
+            Our mobile application services provide high-quality, custom applications for both Android and iOS platforms. Our experienced developers ensure your app is user-friendly, efficient, and tailored to your specific needs.
+            </p>
+            <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+            </div>
+            <div class="col-md-6">
+            <img src="https://i.pinimg.com/564x/75/66/84/756684ad9016af4e9f17ff80308cd426.jpg" alt="Mobile Application Image" class="img-fluid rounded">
+        </div>
+    </div>
+</section>
 </section>
 
 
 
 
+
+
+
+
+
+
+
+<!-- This section for Coming soon -->
+<!-- <section> -->
+    <!-- <h1 class="text-center" id="font" style="margin: 50px 0;">Incomplete</h1> 
+</section> -->
+
+
+
+<script src="script.js"></script>
 <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
