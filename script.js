@@ -1,3 +1,13 @@
+
+// Function to disable right-click
+document.addEventListener('contextmenu', function(e){
+    e.preventDefault(e);
+}, false);
+
+
+
+
+
 function clickItem(buttonId, showId, hideId1, hideId2) {
     document.getElementById(buttonId).addEventListener('click', function() {
         document.getElementById(showId).style.display = 'block';
